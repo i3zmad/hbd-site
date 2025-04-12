@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HBD Surprise</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 24px;
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #e0559f;
+    }
+    #surpriseImage {
+      margin-top: 20px;
+      display: none;
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="showSurprise()">HBD!</button>
+  <img id="surpriseImage" src="160EDBBE-CEA3-4A6F-B675-785D5A92A3E6.jpeg" alt="Surprise Image">
+  <audio id="bgMusic">
+    <source src="Let-Her-Go.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function showSurprise() {
+      document.getElementById('surpriseImage').style.display = 'block';
+      document.getElementById('bgMusic').play();
+    }
+  </script>
+
+</body>
+</html>
